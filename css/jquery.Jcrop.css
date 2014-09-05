@@ -1,0 +1,130 @@
+.jcrop-holder {
+  direction: ltr;
+  text-align: left;
+  /* IE10 touch compatibility */
+  -ms-touch-action: none;
+}
+/* Selection Border */
+.jcrop-vline,
+.jcrop-hline {
+
+  font-size: 0;
+  position: absolute;
+}
+.jcrop-vline {
+  height: 100%;
+  width: 1px !important;
+}
+.jcrop-vline.right {
+  right: 0;
+}
+.jcrop-hline {
+  height: 1px !important;
+  width: 100%;
+}
+.jcrop-hline.bottom {
+  bottom: 0;
+}
+/* Invisible click targets */
+.jcrop-tracker {
+  height: 100%;
+  width: 100%;
+  /* "turn off" link highlight */
+  -webkit-tap-highlight-color: transparent;
+  /* disable callout, image save panel */
+  -webkit-touch-callout: none;
+  /* disable cut copy paste */
+  -webkit-user-select: none;
+}
+/* Dragbars */
+.jcrop-dragbar{
+    font-size: 1px;
+}
+.jcrop-dragbar.ord2-n,
+.jcrop-dragbar.ord2-s {
+  height:1px;
+  width: 100%;
+}
+.jcrop-dragbar.ord2-e,
+.jcrop-dragbar.ord2-w {
+  height: 100%;
+  width:1px;
+}
+.jcrop-dragbar.ord2-n {
+    top: 0px;
+    left: 0px;
+    background: url(../images/border-h.gif) repeat-x left top;
+}
+.jcrop-dragbar.ord2-s {
+    bottom: 0;
+    background: url(../images/border-h.gif) repeat-x left top;
+}
+.jcrop-dragbar.ord2-e {
+    right: 0;
+    background: url(../images/border-v.gif) repeat-y right top;
+}
+.jcrop-dragbar.ord2-w {
+    top: 0px;
+    left: 0px;
+    background: url(../images/border-v.gif) repeat-y right top;
+}
+
+/* Selection Handles */
+.jcrop-handle {
+    background-color: #fff;
+    border: 1px #666 solid;
+    width:4px;
+    height:4px;
+    font-size:0;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+.jcrop-handle.ord-n {
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -2px;
+    top: 0;
+}
+.jcrop-handle.ord-s {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -2px;
+    margin-left: -2px;
+}
+.jcrop-handle.ord-e {
+    margin-right: -2px;
+    margin-top: -2px;
+    right: 0;
+    top: 50%;
+}
+.jcrop-handle.ord-w {
+    left: 0;
+    margin-left: -2px;
+    margin-top: -2px;
+    top: 50%;
+
+}
+.jcrop-handle.ord-nw {
+    left: 0px;
+    margin-left: -2px;
+    margin-top: -2px;
+    top: 0px;
+}
+.jcrop-handle.ord-ne {
+    margin-right: -2px;
+    margin-top: -2px;
+    right: 0;
+    top: 0;
+}
+.jcrop-handle.ord-se {
+    bottom: 0;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    right: 0;
+}
+.jcrop-handle.ord-sw {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2px;
+    margin-left: -2px;
+}

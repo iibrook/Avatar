@@ -1,0 +1,606 @@
+﻿/** { CSS Login **/
+.pl67{
+    padding-left: 67px;
+}
+
+.triangle-left{
+    width: 8px;
+    height: 9px;
+    display: block;
+    position: relative;
+    margin-right: -1px;
+}
+.prompt-box{
+    padding-left: 6px;
+    display: none;
+}
+.prompt-msg{
+    border: solid 1px #ff6e27;
+    padding:0 11px;
+    color: #ff6e27;
+    height: 40px;
+    line-height: 40px;
+}
+.prompt-msg a{
+    color: #6296e3;
+    text-decoration: underline;
+}
+.prompt-box .triangle-left{
+    margin-top: 16px;
+    margin-left: 5px;
+}
+.form-succeed{
+    width: 16px;
+    height: 16px;
+    margin: 12px 0 0 11px;
+    float: left;
+    display: none;
+}
+.container{
+    padding: 16px 0 60px 0;
+    background-color: #f2f2f2;
+}
+.triangle-up-box{
+    width:24px;
+    height:12px;
+    overflow: hidden;
+}
+.triangle-up-bg{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e7e7e7;
+    position: absolute;
+    top:0;
+}
+.triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top:2px;
+    z-index:1;
+}
+.login-container .triangle-up-box,
+.account-container .triangle-up-box{
+    margin-top: -10px;
+    margin-left: 118px;
+}
+.login-title{
+    font-size: 28px;
+    color: #333;
+}
+.login-container,
+.account-container{
+    background-color: #fff;
+    border: solid 1px #e7e7e7;
+    border-radius: 3px;
+    padding-bottom: 40px;
+    margin-top: 12px;
+}
+.login-form{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 625px;
+}
+.login-form-title{
+    font-size: 16px;
+    color: #737373;
+    padding: 10px 0 2px 0;
+}
+.login-form-title span{
+    vertical-align: middle;
+}
+.login-verification-img{
+    border: solid 1px #cfcfcf;
+    margin-left: 20px;
+}
+.login-verification-change{
+    line-height: 42px;
+}
+.login-verification-change a{
+    color:#ff6e27
+}
+.login-form-SMS-time{
+    margin-left: 20px;
+}
+.login-form-SMS-time a{
+    border:solid 1px #f89729;
+    background-color:#ffecdd;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    color: #505153;
+    padding:0 10px;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+.login-form-SMS-time a.disabled{
+    cursor: default;
+    background-color: #b0b0b0;
+    border-color: #cfcfcf;
+    color: #fff;
+}
+.login-form-SMS-inform{
+    font-size:14px;
+    color: #737373;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.login-form-SMS-timeout{
+    color: #ff6d26;
+}
+.login-password-value{
+    color: #bab9b9;
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+}
+.login-form-submit{
+    padding-top: 24px;
+}
+.login-form-submit a{
+    width: 142px;
+    padding-right: 28px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+.login-form-submit a:hover{
+    background-position: 0 -80px;
+    text-decoration: none;
+}
+.login-form-submit a:active{
+    background-position: 0 -160px;
+}
+.login-form-submit a.login-submit-clicked{
+    background-position: 0 -240px;
+}
+.login-form-agreement{
+    font-size: 14px;
+    padding: 40px 0 0 20px;
+}
+.login-form-agreement input{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-top:4px;
+}
+.login-form-agreement label{
+    padding:0 2px;
+}
+.login-form-agreement a{
+    color: #ff4e00;
+    text-decoration: underline;
+}
+.login-form-agreement-prompt{
+    padding-top: 30px;
+}
+.login-forgot-pwd{
+    color: #333;
+    font-size: 18px;
+    margin-left: 24px;
+    margin-top: 24px;
+    height: 50px;
+    line-height: 50px;
+}
+.login-aside{
+    height: 420px;
+    font-size: 18px;
+    color: #787878;
+    border-left: solid 1px #c4c4c4;
+    margin-top: 32px;
+}
+.login-aside-top a{
+    color: #ff8802;
+}
+.login-quicklogin-warp{
+    padding-top: 60px;
+}
+.login-quicklogin-box{
+    padding-top: 36px;
+}
+.login-quicklogin-box a{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.login-quicklogin-box a.login-quicklogin-btn-wb{
+    margin-left: 20px;
+}
+.password-value-tip{
+}
+.login-form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    background: #fff;
+}
+/** CSS Login } **/
+/** { my account **/
+.account-wrap{
+    width: 1046px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.account-nav-box{
+    height: 48px;
+    border: solid 1px #dedede;
+    border-right: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.account-nav-box li{
+    float: left;
+    background-color: #ededed;
+}
+.account-nav-box a{
+    display: block;
+    color: #888888;
+    text-align: center;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 45px;
+    border-right: solid 1px #dedede;
+}
+.account-nav-box a:hover{
+    background-color:#cdcdcd;
+    color: #7b7b7b;
+    text-decoration: none;
+}
+.account-nav-box a.selected{
+    background-color: #65625f;
+    color: #c8c8c8;
+}
+.account-form{
+    padding: 24px 2px 0 2px;
+}
+.account-form-title{
+    font-size: 16px;
+    color: #737373;
+    padding: 16px 0 4px 0;
+}
+.account-form-sex{
+    padding:20px 0;
+    font-size: 16px;
+    color: #737373;
+}
+.account-form-sex input,
+.account-form-sex label{
+    float: left;
+}
+.account-form-sex input{
+    margin:4px 4px 0 40px;
+}
+.account-form-sex label{
+    font-size: 14px;
+}
+.account-form-sex .form-succeed{
+    margin-top: 4px;
+}
+.account-form-locational select,
+.account-form-birthday-select select{
+    background-color: #f4f3f3;
+    border: solid 1px #cfcfcf;
+    padding: 10px 6px;
+    margin-right: 10px;
+}
+.account-form-locational select{
+    min-width: 144px;
+}
+.account-form-signature textarea{
+    padding: 10px;
+    width: 430px;
+    height: 70px;
+    resize:none;
+    color: #bab9b9;
+    border: solid 1px #cfcfcf;
+}
+.account-prompt-birthday{
+    color: #737373;
+    padding: 26px 0 0 14px;
+}
+.account-form-birthday-btn{
+    width: 18px;
+    height: 19px;
+    display: block;
+    position: absolute;
+    left: 272px;
+    top: 13px;
+    z-index: 1;
+    cursor: pointer;
+}
+.account-form-birthday-select{
+    padding-top: 10px;
+}
+.account-form-birthday-select select{
+    margin:0;
+    width: 76px;
+}
+.account-form-birthday-select span{
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    font-size: 14px;
+    padding-right: 11px;
+}
+.login-email-validate-title{
+    font: 18px \5FAE\8F6F\96C5\9ED1;
+    color: #303030;
+    padding-bottom: 10px;
+}
+.login-email-validate-null{
+    padding-top: 24px;
+    font-size: 14px;
+    color: #5f5f5f;
+}
+.login-email-validate-null a{
+    color: #ff8700;
+    text-decoration: underline;
+}
+.change-email-popups{
+    font-size: 16px;
+    background-color: #fff;
+    padding: 35px 10px;
+    margin: 0 auto;
+    color: #4b4b4b;
+}
+.change-email-popups .form-submit a{
+    font-size: 16px;
+    padding: 0 30px;
+}
+.change-email-popups dt{
+    width: 160px;
+    text-align: right;
+    color: #919191;
+}
+.change-email-popups-input{
+    padding-top: 10px;
+}
+.change-email-popups-tit{
+    padding-top:10px;
+    line-height: 46px;
+}
+.change-email-popups .account-prompt-format{
+    font-size: 12px;
+}
+.change-email-popups .prompt-msg{
+    min-height: 20px;
+    height: auto;
+    line-height: 16px;
+    padding: 11px;
+    width: 110px;
+}
+.retrieve-password{
+    color: #737373;
+}
+.retrieve-password-way{
+    font-size: 14px;
+}
+.account-form-sex-title{
+    font-size: 16px;
+}
+.retrieve-password-way label{
+    vertical-align: middle;
+    padding-right: 32px;
+}
+.set-portrait{
+    padding-top: 40px;
+}
+/** { Avatar **/
+.portrait-left{
+    width: 302px;
+    padding-right: 50px;
+}
+.avatar-prototype,
+.portrait-preview-img{
+    background-position:  50% 50%;
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    /*Ｍozilla*/
+    -moz-background-size:100%;
+    /*Webkit*/
+    -webkit-background-size:100%;
+    /*Presto*/
+    -o-background-size:100%;
+}
+.portrait-revolve{
+    height:34px;
+    line-height: 34px;
+    padding-left: 2px;
+    color: #999;
+    background-color: #555555;
+}
+.portrait-revolve a{
+    display: block;
+    float: left;
+    padding-left: 42px;
+    width:57px;
+    height: 34px;
+    line-height: 34px;
+    border-right:solid 1px #494949;
+    color: #999999;
+    background: url(../images/portraitRevolve.png) 16px 6px no-repeat;
+}
+.portrait-revolve a:hover{
+    text-decoration: none;
+    color: #ccc;
+}
+.portrait-revolve .revolve-right{
+    background-position: 16px -54px;
+}
+.portrait-revolve .revolve-reset{
+    background-position: 16px -114px;
+}
+.portrait-list{
+    float: left;
+    padding-left:50px;
+    width:600px;
+    border-left: solid 1px #cecece;
+    color: #555555;
+}
+.portrait-list dt{
+    padding-top: 48px;
+    padding-bottom: 30px;
+}
+.avatar-preview-item{
+    float: left;
+    padding-right: 30px;
+}
+.portrait-preview{
+    border: 1px solid #cecece;
+    overflow: hidden;
+    position: relative;
+}
+.preview-loading{
+    background: url(../images/loading.gif) 50% 50% no-repeat;
+}
+.avatar-prototype{
+    width: 300px;
+    height: 300px;
+    border: 0;
+}
+.avatar-prototype img{
+    position: absolute;
+}
+.avatar-preview-big{
+    width: 160px;
+    height: 160px;
+}
+.avatar-preview-normal{
+    height: 100px;
+    width: 100px;
+    margin-top: 60px;
+}
+.avatar-preview-small{
+    height: 50px;
+    width:50px;
+    margin-top: 110px;
+}
+.avatar-box{
+    border: 1px solid #cecece;
+    border-bottom: 0;
+    overflow: hidden;
+    height:300px;
+    width:300px;
+}
+.upload-btn-box{
+    line-height: 50px;
+    color: #444;
+    padding-bottom: 40px;
+}
+.upload-btn{
+    margin-right: 20px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: #f89729;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    color: #fff;
+    border-radius: 4px;
+}
+.upload-btn:hover,
+.portrait-submit-save:hover{
+    background-color: #f58a0f;
+    text-decoration: none;
+}
+.upload-btn:active,
+.portrait-submit-save:active{
+    background-color: #f28100;
+}
+.upload-btn input{
+    font-size: 30px;
+    height: 60px;
+    position: absolute;
+    right:-4px;
+    top:-5px;
+    z-index: 1;
+    cursor: pointer;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+}
+.portrait-submit-box{
+    padding-top: 40px;
+}
+.portrait-submit-box a{
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+    display: block;
+    border-radius: 4px;
+}
+.portrait-submit-box a:hover{
+    text-decoration: none;
+}
+.portrait-submit-save{
+    background-color:#f89729;
+    margin-right:20px;
+}
+.portrait-submit-cancel{
+    background-color: #b3b3b3;
+}
+.portrait-submit-cancel:hover{
+    background-color: #8f8f8f;
+}
+.portrait-submit-cancel:active{
+    background-color: #7c7c7c;
+}
+.avatar-area-box{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 300px;
+    height: 300px;
+}
+.avatar-zoom{
+    height: 54px;
+    background-color: #555;
+    border-bottom: solid 1px #494949;
+    overflow: hidden;
+}
+.ui-slider-handle{
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top:-8px;
+    background: url(../images/portraitRevolve.png) 0 -220px no-repeat;
+    margin: 0 0 0 -12px;
+}
+.zoom-silder{
+    height:6px;
+    margin:24px 40px 0 40px;
+    background: #303030;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.zoom-in,
+.zoom-out{
+    width:18px;
+    height: 18px;
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    margin:18px 8px 0 8px;
+    background: url(../images/portraitRevolve.png) 0 -180px no-repeat;
+}
+.zoom-in{
+    background-position: 0 -260px;
+}
+/** Avatar } **/
+/** my account } **/
